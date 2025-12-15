@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_blogs",
+  "info": {
+    "displayName": "Blog",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Descripition": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
