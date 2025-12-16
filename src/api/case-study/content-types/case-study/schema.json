@@ -38,6 +38,16 @@
     "Solution": {
       "type": "blocks"
     },
+    "SolutionImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "ImplementationProcess": {
       "type": "blocks"
     },
