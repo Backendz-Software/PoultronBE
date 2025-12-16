@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CompanyName": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "ImplementationDate": {
+      "type": "date"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "PrimaryOutcome": {
+      "type": "string"
+    },
+    "AbouttheClient": {
+      "type": "blocks"
+    },
+    "Background": {
+      "type": "blocks"
+    },
+    "Challenges": {
+      "type": "blocks"
+    },
+    "Solution": {
+      "type": "blocks"
+    },
+    "ImplementationProcess": {
+      "type": "blocks"
+    },
+    "Outcome": {
+      "type": "blocks"
+    },
+    "FutureOutlook": {
+      "type": "blocks"
+    },
+    "ClientFeedback": {
+      "type": "blocks"
+    },
+    "industry": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::industry.industry",
+      "inversedBy": "case_studies"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "case_study"
+    },
+    "KeyResults": {
+      "type": "component",
+      "component": "shared.kery-results",
+      "repeatable": true
+    }
+  }
+}

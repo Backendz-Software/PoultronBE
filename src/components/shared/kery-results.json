@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_kery_results",
+  "info": {
+    "displayName": "Kery Results"
+  },
+  "options": {},
+  "attributes": {
+    "KeyResult": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
