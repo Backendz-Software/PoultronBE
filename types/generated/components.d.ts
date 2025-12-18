@@ -26,6 +26,16 @@ export interface SharedButton extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedKeryResults extends Struct.ComponentSchema {
+  collectionName: 'components_shared_kery_results';
+  info: {
+    displayName: 'Kery Results';
+  };
+  attributes: {
+    KeyResult: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -93,6 +103,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'shared.blog': SharedBlog;
       'shared.button': SharedButton;
+      'shared.kery-results': SharedKeryResults;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
