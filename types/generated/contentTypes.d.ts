@@ -480,7 +480,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+<<<<<<< Updated upstream
     Description: Schema.Attribute.Text;
+=======
+    Description: Schema.Attribute.Blocks;
+>>>>>>> Stashed changes
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

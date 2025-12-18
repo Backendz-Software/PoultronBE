@@ -16,7 +16,11 @@
       "type": "string"
     },
     "Description": {
+<<<<<<< Updated upstream
       "type": "text"
+=======
+      "type": "blocks"
+>>>>>>> Stashed changes
     },
     "slug": {
       "type": "uid",
