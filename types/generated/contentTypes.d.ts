@@ -488,6 +488,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    SEO: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -563,6 +564,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     PrimaryOutcome: Schema.Attribute.String;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
+    SEO: Schema.Attribute.Component<'shared.seo', false>;
     Solution: Schema.Attribute.Blocks;
     SolutionImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
